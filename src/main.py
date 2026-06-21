@@ -1,3 +1,9 @@
+import json
+
+from services.surya_service import (
+    SuryaService
+)
+
 from extractors.image_extractor import (
     ImageExtractor
 )
@@ -6,33 +12,23 @@ from processors.figure_processor import (
     FigureProcessor
 )
 
-from processors.figure_filter import (
-    FigureFilter
-)
-
-from services.surya_service import (
-    SuryaService
+from processors.document_chunker import (
+    DocumentChunker
 )
 
 
-IMAGE_PATH = (
-    "samples/placement_2024.jpg"
-)
+IMAGE_PATH = "samples/placement_2024.jpg"
 
 
 def main():
 
-    print(
-        "\nLoading Surya..."
-    )
+    print("\nLoading Surya...")
+    print("=" * 80)
 
-    surya_service = (
-        SuryaService()
-    )
+    surya_service = SuryaService()
 
-    print(
-        "\nExtracting document..."
-    )
+    print("\nExtracting document...")
+    print("=" * 80)
 
     extractor = ImageExtractor(
         surya_service
@@ -42,71 +38,65 @@ def main():
         IMAGE_PATH
     )
 
-    print(
-        "\nProcessing figures..."
-    )
+    print("Document extracted successfully.")
 
-    figure_processor = (
-        FigureProcessor()
-    )
-
-    figure_results = (
-        figure_processor.process(
-            document
-        )
-    )
-
-    print(
-        "\nDetected Figures:"
-    )
+    print("\nProcessing figures...")
     print("=" * 80)
 
-    for figure in figure_results:
+    figure_processor = FigureProcessor()
+
+    figures = figure_processor.process(
+        document
+    )
+
+    print(f"Detected {len(figures)} figure(s)\n")
+
+    for idx, figure in enumerate(
+        figures,
+        start=1
+    ):
 
         print(
-            figure["path"]
+            f"Figure {idx}: "
+            f"{figure['path']}"
         )
 
-    print(
-        "\nFiltering figures..."
-    )
+    print("\nGenerating chunks...")
     print("=" * 80)
 
-    filterer = FigureFilter(
-        surya_service
+    chunker = DocumentChunker()
+
+    chunks = chunker.chunk(
+        document
     )
-
-    useful_figures = []
-
-    for figure in figure_results:
-
-        informative = (
-            filterer.is_informative(
-                figure["path"]
-            )
-        )
-
-        print(
-            f"{figure['path']} -> "
-            f"{informative}"
-        )
-
-        if informative:
-
-            useful_figures.append(
-                figure
-            )
 
     print(
-        "\nUseful Figures:"
+        f"Generated {len(chunks)} chunk(s)"
     )
+
+    print("\nChunk Preview:")
     print("=" * 80)
 
-    for figure in useful_figures:
+    for idx, chunk in enumerate(
+        chunks,
+        start=1
+    ):
 
         print(
-            figure["path"]
+            f"\nChunk {idx}"
         )
+
+        print(
+            f"Type   : {chunk.chunk_type}"
+        )
+
+        print(
+            f"Content: "
+            f"{chunk.content[:200]}"
+        )
+
+    print("\nSaving outputs...")
+    print("=" * 80)
 
     with open(
         "outputs/result.json",
@@ -118,6 +108,32 @@ def main():
                 indent=4
             )
         )
+
+    with open(
+        "outputs/chunks.json",
+        "w"
+    ) as f:
+
+        json.dump(
+            [
+                chunk.model_dump()
+                for chunk in chunks
+            ],
+            f,
+            indent=4
+        )
+
+    print(
+        "Saved outputs/result.json"
+    )
+
+    print(
+        "Saved outputs/chunks.json"
+    )
+
+    print(
+        "\nPipeline completed successfully."
+    )
 
 
 if __name__ == "__main__":
