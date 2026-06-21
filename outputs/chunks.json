@@ -1,122 +1,121 @@
 [
     {
-        "chunk_id": "3f11f48b-7d93-40dc-a86b-182dae62fba4",
+        "chunk_id": "ee41c7e6-6957-4d35-aab6-dfaea7ab5b07",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "header",
-        "content": "International Institute of Information Technology Rangalore"
+        "content": "International Institute of Information Technology Rangalore",
+        "confidence": 0.968863453167431
     },
     {
-        "chunk_id": "c6ea6425-22f9-4752-9ece-3926314ef681",
+        "chunk_id": "ace6a288-6b5e-439c-88d7-0b607ff39813",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "header",
-        "content": "PLACEMENT STATISTICS* 2023-2024"
+        "content": "PLACEMENT STATISTICS* 2023-2024",
+        "confidence": 0.9601639535599242
     },
     {
-        "chunk_id": "564992a8-ba4d-4983-9b6b-010eb1ff6336",
+        "chunk_id": "34667532-82e9-49b2-8929-eef01cb51dd3",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "header",
-        "content": "*Classification of Leucococcus papyrinus"
+        "content": "*Classification of Leucococcus papyrinus",
+        "confidence": 0.7574783307782424
     },
     {
-        "chunk_id": "ca2c8dfc-3802-4132-9dbc-91ee7ccf9000",
+        "chunk_id": "4c20c269-b7d6-4620-b5f0-2af764ef353c",
         "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "602"
+        "chunk_type": "metric",
+        "content": "Total Offers: 602",
+        "confidence": 0.8898295457238432
     },
     {
-        "chunk_id": "9f061c5f-469c-4dca-b6d7-2fb654f80ade",
+        "chunk_id": "2371b143-c151-4349-928a-0355877e49be",
         "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "Total Offers"
+        "chunk_type": "metric",
+        "content": "Internship Offers: 311",
+        "confidence": 0.946225364833608
     },
     {
-        "chunk_id": "c665463a-3a9b-49c2-b4c0-49689a9ba5a0",
+        "chunk_id": "ea2e7421-d936-4a56-8bae-9c893b66d6a6",
         "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "311"
+        "chunk_type": "metric",
+        "content": "Full Time Offers: 291",
+        "confidence": 0.8441383145620545
     },
     {
-        "chunk_id": "d3f3fee5-dc21-4489-a448-20783f771897",
-        "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "Internship Offers"
-    },
-    {
-        "chunk_id": "0480f93f-08b4-4d60-bbea-3093d310e444",
-        "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "291"
-    },
-    {
-        "chunk_id": "a450042e-5269-4e45-9ebd-70a952b70ef8",
-        "source": "samples/placement_2024.jpg",
-        "chunk_type": "text",
-        "content": "Full Time Offers"
-    },
-    {
-        "chunk_id": "81771b87-be11-459e-83b9-a6e0b5ce1946",
+        "chunk_id": "31e99274-87f9-4993-acb3-de771bd26120",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "table",
-        "content": "OFFER** METRIC iMTech MTech CSE ECE CSE ECE Full Time CTC # (INR In Lakhs) Highest 65 65 65 52.05 Average 33.23 34.9 22.13 29.64 Median 28.3 36.4 18.9 36.4 Internship Stipend (INR In Thousands) Highest 177 240 110 60 Average 69 59.5 55.1 44.6 Median 55 45 50 45"
+        "content": "OFFER** METRIC iMTech MTech CSE ECE CSE ECE Full Time CTC # (INR In Lakhs) Highest 65 65 65 52.05 Average 33.23 34.9 22.13 29.64 Median 28.3 36.4 18.9 36.4 Internship Stipend (INR In Thousands) Highest 177 240 110 60 Average 69 59.5 55.1 44.6 Median 55 45 50 45",
+        "confidence": 0.9925203824092435
     },
     {
-        "chunk_id": "e2fcf5b6-5c98-47e3-a0c3-2a2ddf89e2d0",
+        "chunk_id": "2f2ee5df-6964-43af-8e65-f77b8f6c0b04",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "section_header",
-        "content": "Internship/Thesis Offers*"
+        "content": "Internship/Thesis Offers*",
+        "confidence": 0.986628962252657
     },
     {
-        "chunk_id": "c1d28f4e-a8a6-445f-b20a-022886596289",
+        "chunk_id": "bcc85461-c6c5-42ca-b276-36b05db78c05",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "text",
-        "content": "*Includes International Offers"
+        "content": "*Includes International Offers",
+        "confidence": 0.980998435007815
     },
     {
-        "chunk_id": "b1c8252d-59ec-4762-b2c3-6e318d529a05",
+        "chunk_id": "e218d895-6285-4502-a455-2420f792405f",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "section_header",
-        "content": "Full Time Offers##"
+        "content": "Full Time Offers##",
+        "confidence": 0.9691944733127288
     },
     {
-        "chunk_id": "089e9316-bc95-4fe1-8cee-b1c8a18e0ece",
+        "chunk_id": "044ab467-aef7-491d-b114-7b6a10fff311",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "text",
-        "content": "**Includes Off-Campus Offers"
+        "content": "**Includes Off-Campus Offers",
+        "confidence": 0.9665750957493698
     },
     {
-        "chunk_id": "f4fdef55-994f-4eaa-b4a3-adeb4f5bb1fc",
+        "chunk_id": "10c86eb0-fbe1-4f47-bda0-7efde0d3efd2",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "text",
-        "content": "##RSUs Included In RSUs"
+        "content": "##RSUs Included In RSUs",
+        "confidence": 0.7915773557662631
     },
     {
-        "chunk_id": "da219c10-fa4f-4d5b-8ff0-ec98d3b92713",
+        "chunk_id": "6023877d-fccc-44f3-a16b-cbea4aff2921",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "text",
-        "content": "##Includes Academia And Industry Offers"
+        "content": "##Includes Academia And Industry Offers",
+        "confidence": 0.9731560789494962
     },
     {
-        "chunk_id": "ded07a64-23fe-4075-a85d-4c984b3e8c0e",
+        "chunk_id": "010be5cf-a189-409e-a3aa-dcdc23716110",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "section_header",
-        "content": "Top Recruiters"
+        "content": "Top Recruiters",
+        "confidence": 0.9937163169497417
     },
     {
-        "chunk_id": "50faa597-c090-4836-a651-c595a940ee52",
+        "chunk_id": "6383a562-8dd3-45b0-9cd6-23311d59686d",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "text",
-        "content": "Placement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed."
+        "content": "Placement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.",
+        "confidence": 0.99966148164319
     },
     {
-        "chunk_id": "33e325a5-d8f1-4adb-ae50-886c65fc5b9a",
+        "chunk_id": "856f6678-f170-42f4-86e0-f6c102cc119c",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "footer",
-        "content": "Write to IIIT-B Placement Office: placement.committee@iiitb.org | iiitb_placement@iiitb.ac.in"
+        "content": "Write to IIIT-B Placement Office: placement.committee@iiitb.org | iiitb_placement@iiitb.ac.in",
+        "confidence": 0.9961196140572778
     },
     {
-        "chunk_id": "a8d08285-778b-4cab-bcf8-9d3b956f4ad8",
+        "chunk_id": "57b83348-4724-461a-a053-8b5757d01ef4",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "footer",
-        "content": "Follow us @ /IIITBofficial in /school/IIITBofficial @IIITBofficial Naviiina.iiitb.ac.in www.iiitb.ac.in"
+        "content": "Follow us @ /IIITBofficial in /school/IIITBofficial @IIITBofficial Naviiina.iiitb.ac.in www.iiitb.ac.in",
+        "confidence": 0.9781494611713826
     }
 ]

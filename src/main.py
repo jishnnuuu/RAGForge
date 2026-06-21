@@ -87,11 +87,16 @@ def main():
         )
 
         print(
-            f"Type   : {chunk.chunk_type}"
+            f"Type       : {chunk.chunk_type}"
         )
 
         print(
-            f"Content: "
+            f"Confidence : "
+            f"{chunk.confidence:.3f}"
+        )
+
+        print(
+            f"Content    : "
             f"{chunk.content[:200]}"
         )
 

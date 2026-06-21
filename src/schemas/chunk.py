@@ -10,3 +10,5 @@ class Chunk(BaseModel):
     chunk_type: str
 
     content: str
+
+    confidence: float
