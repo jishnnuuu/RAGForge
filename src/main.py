@@ -129,8 +129,13 @@ def main():
         )
 
         print(
-            f"Content    : "
-            f"{chunk.content[:200]}"
+            f"Parent     : "
+            f"{chunk.parent_section}"
+        )
+
+        print(
+            f"Content    :\n"
+            f"{chunk.content[:300]}"
         )
 
     # ==================================================
@@ -203,9 +208,16 @@ def main():
         )
 
         print(
-            f"Content: "
+            f"Parent Section: "
+            f"{chunks[idx].parent_section}"
+        )
+
+        print(
+            f"Content:\n"
             f"{chunks[idx].content}"
         )
+
+        print("-" * 80)
 
     # ==================================================
     # Save Outputs
@@ -235,7 +247,7 @@ def main():
                 chunk.model_dump()
                 for chunk in chunks
             ],
-            f,  m 
+            f,
             indent=4
         )
 

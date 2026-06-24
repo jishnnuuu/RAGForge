@@ -12,3 +12,5 @@ class Chunk(BaseModel):
     content: str
 
     confidence: float
+
+    parent_section: str | None = None

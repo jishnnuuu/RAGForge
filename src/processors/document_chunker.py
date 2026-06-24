@@ -12,12 +12,10 @@ class DocumentChunker:
         text: str
     ) -> bool:
 
-        text = text.strip()
-
         return bool(
             re.fullmatch(
                 r"[\d.,]+",
-                text
+                text.strip()
             )
         )
 
@@ -27,6 +25,8 @@ class DocumentChunker:
     ) -> list[Chunk]:
 
         chunks = []
+
+        current_section = None
 
         blocks = document.blocks
 
@@ -41,6 +41,22 @@ class DocumentChunker:
                 i += 1
                 continue
 
+            # ----------------------------------
+            # Section Tracking
+            # ----------------------------------
+
+            if block.block_type in [
+                "header",
+                "section_header"
+            ]:
+
+                current_section = (
+                    block.content
+                )
+
+                i += 1
+                continue
+
             content = block.content
 
             chunk_type = block.block_type
@@ -48,14 +64,7 @@ class DocumentChunker:
             confidence = block.confidence
 
             # ----------------------------------
-            # Merge:
-            #
-            # 602
-            # Total Offers
-            #
-            # =>
-            #
-            # Total Offers: 602
+            # Merge Metrics
             # ----------------------------------
 
             if (
@@ -83,21 +92,30 @@ class DocumentChunker:
                         next_block.confidence
                     )
 
+                    chunk_type = "metric"
+
                     i += 2
 
-                    chunks.append(
-                        Chunk(
-                            chunk_id=str(
-                                uuid.uuid4()
-                            ),
-                            source=document.source,
-                            chunk_type="metric",
-                            content=content,
-                            confidence=confidence
-                        )
-                    )
+                else:
 
-                    continue
+                    i += 1
+
+            else:
+
+                i += 1
+
+            # ----------------------------------
+            # Context Enrichment
+            # ----------------------------------
+
+            enriched_content = content
+
+            if current_section:
+
+                enriched_content = (
+                    f"{current_section}\n\n"
+                    f"{content}"
+                )
 
             chunks.append(
                 Chunk(
@@ -106,11 +124,10 @@ class DocumentChunker:
                     ),
                     source=document.source,
                     chunk_type=chunk_type,
-                    content=content,
-                    confidence=confidence
+                    content=enriched_content,
+                    confidence=confidence,
+                    parent_section=current_section
                 )
             )
-
-            i += 1
 
         return chunks
