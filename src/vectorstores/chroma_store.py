@@ -70,9 +70,14 @@ class ChromaStore:
 
     def reset(self):
 
-        self.client.delete_collection(
-            "ragforge"
-        )
+        try:
+
+            self.client.delete_collection(
+                "ragforge"
+            )
+
+        except Exception:
+            pass
 
         self.collection = (
             self.client.get_or_create_collection(
