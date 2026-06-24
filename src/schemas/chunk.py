@@ -9,8 +9,8 @@ class Chunk(BaseModel):
 
     chunk_type: str
 
+    title: str | None = None
+
     content: str
 
-    confidence: float
-
-    parent_section: str | None = None
+    metadata: dict = {}

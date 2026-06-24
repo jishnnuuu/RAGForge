@@ -6,7 +6,7 @@
             "content": "International Institute of Information Technology Rangalore",
             "raw_html": "<h1>International Institute of Information Technology Rangalore</h1>",
             "reading_order": 1,
-            "confidence": 0.9688658365163016,
+            "confidence": 0.9688643163494629,
             "bbox": [
                 676.989,
                 319.704,
@@ -21,7 +21,7 @@
             "content": "PLACEMENT STATISTICS* 2023-2024",
             "raw_html": "<h1>PLACEMENT STATISTICS*<br/>2023-2024</h1>",
             "reading_order": 2,
-            "confidence": 0.9601509519606343,
+            "confidence": 0.9601643428036185,
             "bbox": [
                 1928.033,
                 289.256,
@@ -36,7 +36,7 @@
             "content": "*Classification of Leucococcus papyrinus",
             "raw_html": "<p>*Classification of Leucococcus papyrinus</p>",
             "reading_order": 3,
-            "confidence": 0.7574783727213387,
+            "confidence": 0.757473834074109,
             "bbox": [
                 3230.544,
                 822.096,
@@ -51,7 +51,7 @@
             "content": "602",
             "raw_html": "<h2>602</h2>",
             "reading_order": 4,
-            "confidence": 0.8898105629003692,
+            "confidence": 0.8898295457238432,
             "bbox": [
                 316.72,
                 1309.264,
@@ -66,7 +66,7 @@
             "content": "Total Offers",
             "raw_html": "<h2>Total Offers</h2>",
             "reading_order": 5,
-            "confidence": 0.9038968317915624,
+            "confidence": 0.903930063091043,
             "bbox": [
                 312.761,
                 1583.2959999999998,
@@ -96,7 +96,7 @@
             "content": "311",
             "raw_html": "<ul><li>311</li></ul>",
             "reading_order": 7,
-            "confidence": 0.9461686408787879,
+            "confidence": 0.946225364833608,
             "bbox": [
                 2086.393,
                 1339.712,
@@ -111,7 +111,7 @@
             "content": "Internship Offers",
             "raw_html": "<h2>Internship Offers</h2>",
             "reading_order": 8,
-            "confidence": 0.9579377088766534,
+            "confidence": 0.9579223178778319,
             "bbox": [
                 2094.311,
                 1552.848,
@@ -141,7 +141,7 @@
             "content": "Full Time Offers",
             "raw_html": "Full Time Offers",
             "reading_order": 10,
-            "confidence": 0.9520694136339638,
+            "confidence": 0.9520533676495659,
             "bbox": [
                 3048.4300000000003,
                 1552.848,
@@ -156,7 +156,7 @@
             "content": "OFFER** METRIC iMTech MTech CSE ECE CSE ECE Full Time CTC # (INR In Lakhs) Highest 65 65 65 52.05 Average 33.23 34.9 22.13 29.64 Median 28.3 36.4 18.9 36.4 Internship Stipend (INR In Thousands) Highest 177 240 110 60 Average 69 59.5 55.1 44.6 Median 55 45 50 45",
             "raw_html": "<table border=\"1\">\n<thead>\n<tr>\n<th rowspan=\"2\">OFFER**</th>\n<th rowspan=\"2\">METRIC</th>\n<th colspan=\"2\">iMTech</th>\n<th colspan=\"2\">MTech</th>\n</tr>\n<tr>\n<th>CSE</th>\n<th>ECE</th>\n<th>CSE</th>\n<th>ECE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td rowspan=\"3\">Full Time CTC<sup>#</sup><br/>(INR In Lakhs)</td>\n<td>Highest</td>\n<td>65</td>\n<td>65</td>\n<td>65</td>\n<td>52.05</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>33.23</td>\n<td>34.9</td>\n<td>22.13</td>\n<td>29.64</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>28.3</td>\n<td>36.4</td>\n<td>18.9</td>\n<td>36.4</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Internship<br/>Stipend<br/>(INR In<br/>Thousands)</td>\n<td>Highest</td>\n<td>177</td>\n<td>240</td>\n<td>110</td>\n<td>60</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>69</td>\n<td>59.5</td>\n<td>55.1</td>\n<td>44.6</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>55</td>\n<td>45</td>\n<td>50</td>\n<td>45</td>\n</tr>\n</tbody>\n</table>",
             "reading_order": 11,
-            "confidence": 0.9925205493811576,
+            "confidence": 0.9925202797498069,
             "bbox": [
                 67.30300000000001,
                 2161.808,
@@ -171,7 +171,7 @@
             "content": "Internship/Thesis Offers*",
             "raw_html": "<h2>Internship/Thesis Offers*</h2>",
             "reading_order": 12,
-            "confidence": 0.9866290686836362,
+            "confidence": 0.9866292986925069,
             "bbox": [
                 1175.8229999999999,
                 4262.72,
@@ -216,7 +216,7 @@
             "content": "*Includes International Offers",
             "raw_html": "<p>*Includes International Offers</p>",
             "reading_order": 15,
-            "confidence": 0.9809983175467567,
+            "confidence": 0.9809984693154835,
             "bbox": [
                 1623.1899999999998,
                 7444.536,
@@ -231,7 +231,7 @@
             "content": "Full Time Offers##",
             "raw_html": "<h2>Full Time Offers##</h2>",
             "reading_order": 16,
-            "confidence": 0.9691944733127288,
+            "confidence": 0.9691941781478332,
             "bbox": [
                 1429.1989999999998,
                 7764.24,
@@ -276,7 +276,7 @@
             "content": "**Includes Off-Campus Offers",
             "raw_html": "<p>**Includes Off-Campus Offers</p>",
             "reading_order": 19,
-            "confidence": 0.9665751149464924,
+            "confidence": 0.9665750745974565,
             "bbox": [
                 855.144,
                 10961.279999999999,
@@ -291,7 +291,7 @@
             "content": "##RSUs Included In RSUs",
             "raw_html": "<p>##RSUs Included In RSUs</p>",
             "reading_order": 20,
-            "confidence": 0.7915773557662631,
+            "confidence": 0.7915835770104304,
             "bbox": [
                 1658.821,
                 10961.279999999999,
@@ -306,7 +306,7 @@
             "content": "##Includes Academia And Industry Offers",
             "raw_html": "<p>##Includes Academia And Industry Offers</p>",
             "reading_order": 21,
-            "confidence": 0.9731564495307662,
+            "confidence": 0.9731561087496432,
             "bbox": [
                 2125.983,
                 10961.279999999999,
@@ -336,7 +336,7 @@
             "content": "Placement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.",
             "raw_html": "<p>Placement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.</p>",
             "reading_order": 24,
-            "confidence": 0.9996614780879333,
+            "confidence": 0.9996614816456518,
             "bbox": [
                 451.326,
                 14767.279999999999,
@@ -351,7 +351,7 @@
             "content": "Write to IIIT-B Placement Office: placement.committee@iiitb.org | iiitb_placement@iiitb.ac.in",
             "raw_html": "<p>Write to IIIT-B Placement Office: <a href=\"mailto:placement.committee@iiitb.org\">placement.committee@iiitb.org</a> | <a href=\"mailto:iiitb_placement@iiitb.ac.in\">iiitb_placement@iiitb.ac.in</a></p>",
             "reading_order": 25,
-            "confidence": 0.996119667707773,
+            "confidence": 0.9961195755496961,
             "bbox": [
                 736.374,
                 14934.744,
@@ -366,7 +366,7 @@
             "content": "Follow us @ /IIITBofficial in /school/IIITBofficial @IIITBofficial Naviiina.iiitb.ac.in www.iiitb.ac.in",
             "raw_html": "<p>Follow us @ <a href=\"#\">/IIITBofficial</a> <a href=\"#\">in</a> <a href=\"#\">/school/IIITBofficial</a> <a href=\"#\">@IIITBofficial</a> <a href=\"#\">Naviiina.iiitb.ac.in</a> <a href=\"#\">www.iiitb.ac.in</a></p>",
             "reading_order": 26,
-            "confidence": 0.97814971874123,
+            "confidence": 0.9781501818022138,
             "bbox": [
                 332.55600000000004,
                 15056.536,

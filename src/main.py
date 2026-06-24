@@ -119,23 +119,18 @@ def main():
         )
 
         print(
-            f"Type       : "
+            f"Type    : "
             f"{chunk.chunk_type}"
         )
 
         print(
-            f"Confidence : "
-            f"{chunk.confidence:.3f}"
+            f"Title   : "
+            f"{chunk.title}"
         )
 
         print(
-            f"Parent     : "
-            f"{chunk.parent_section}"
-        )
-
-        print(
-            f"Content    :\n"
-            f"{chunk.content[:300]}"
+            f"Content :\n"
+            f"{chunk.content[:500]}"
         )
 
     # ==================================================
