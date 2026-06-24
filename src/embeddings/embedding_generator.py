@@ -1,15 +1,26 @@
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import (
+    SentenceTransformer
+)
 
 
 class EmbeddingGenerator:
 
     def __init__(
         self,
-        model_name="BAAI/bge-small-en-v1.5"
+        model_name: str = (
+            "BAAI/bge-small-en-v1.5"
+        )
     ):
 
-        self.model = SentenceTransformer(
-            model_name
+        print(
+            f"Loading embedding model: "
+            f"{model_name}"
+        )
+
+        self.model = (
+            SentenceTransformer(
+                model_name
+            )
         )
 
     def embed(
@@ -22,12 +33,12 @@ class EmbeddingGenerator:
             normalize_embeddings=True
         )
 
-generator = EmbeddingGenerator()
+    def embed_batch(
+        self,
+        texts: list[str]
+    ):
 
-embedding = generator.embed(
-    "Total Offers: 602"
-)
-
-print(
-    len(embedding)
-)
+        return self.model.encode(
+            texts,
+            normalize_embeddings=True
+        )
