@@ -203,8 +203,8 @@ def main():
         )
 
         print(
-            f"Parent Section: "
-            f"{chunks[idx].parent_section}"
+            f"Title: "
+            f"{chunks[idx].title}"
         )
 
         print(
