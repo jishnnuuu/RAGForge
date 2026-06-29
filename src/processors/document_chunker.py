@@ -82,6 +82,8 @@ class DocumentChunker:
         title = self._extract_title(
             document
         )
+        
+        current_section = title
 
         content_parts = []
 
@@ -108,6 +110,22 @@ class DocumentChunker:
 
                 i += 1
                 continue
+                
+            # ---------------------------------------
+            # Track current section
+            # ---------------------------------------
+
+            if block.block_type == "section_header":
+
+                current_section = block.content
+
+                content_parts.append(
+                    block.content
+                )
+
+                i += 1
+
+                continue
 
             # -------------------------------------------------
             # Tables
@@ -117,22 +135,27 @@ class DocumentChunker:
 
                 embedding_text = block.content
 
-                if title:
+                if current_section:
 
                     embedding_text = (
-                        f"{title}\n\n"
+                        f"{current_section}\n\n"
                         f"{embedding_text}"
                     )
 
-                llm_text = (
-                    self.formatter.format(
-                        block
-                    )
+                llm_text = self.formatter.format(
+                    block
                 )
 
                 if not llm_text:
 
                     llm_text = embedding_text
+
+                elif current_section:
+
+                    llm_text = (
+                        f"{current_section}\n\n"
+                        f"{llm_text}"
+                    )
 
                 chunks.append(
 
@@ -146,7 +169,7 @@ class DocumentChunker:
 
                         chunk_type="table",
 
-                        title=f"Table {table_counter}",
+                        title=current_section or f"Table {table_counter}",
 
                         embedding_text=embedding_text,
 
@@ -210,16 +233,24 @@ class DocumentChunker:
 
                 "metric",
 
-                "section_header",
+                # "section_header",
 
                 "footer"
 
             ]:
 
+                if (
+                    hasattr(block, "confidence")
+                    and block.confidence is not None
+                    and block.confidence < 0.75
+                ):
+
+                    i += 1
+                    continue
+
                 content_parts.append(
                     block.content
                 )
-
             i += 1
 
         # -------------------------------------------------

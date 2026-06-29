@@ -6,7 +6,7 @@
             "content": "International Institute of Information Technology Rangalore",
             "raw_html": "<h1>International Institute of Information Technology Rangalore</h1>",
             "reading_order": 1,
-            "confidence": 0.9688659160623202,
+            "confidence": 0.9688659005956595,
             "bbox": [
                 676.989,
                 319.704,
@@ -36,7 +36,7 @@
             "content": "*Classification of Leucococcus papyrinus",
             "raw_html": "<p>*Classification of Leucococcus papyrinus</p>",
             "reading_order": 3,
-            "confidence": 0.7574673537398489,
+            "confidence": 0.7574673664364012,
             "bbox": [
                 3230.544,
                 822.096,
@@ -66,7 +66,7 @@
             "content": "Total Offers",
             "raw_html": "<h2>Total Offers</h2>",
             "reading_order": 5,
-            "confidence": 0.9038968493721337,
+            "confidence": 0.9038968317915624,
             "bbox": [
                 312.761,
                 1583.2959999999998,
@@ -111,7 +111,7 @@
             "content": "Internship Offers",
             "raw_html": "<h2>Internship Offers</h2>",
             "reading_order": 8,
-            "confidence": 0.9579376612038406,
+            "confidence": 0.9579249508662,
             "bbox": [
                 2094.311,
                 1552.848,
@@ -141,7 +141,7 @@
             "content": "Full Time Offers",
             "raw_html": "Full Time Offers",
             "reading_order": 10,
-            "confidence": 0.9520533431231408,
+            "confidence": 0.9520533816587872,
             "bbox": [
                 3048.4300000000003,
                 1552.848,
@@ -156,7 +156,7 @@
             "content": "| OFFER** | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC # (INR In Lakhs) | Highest | 65 | 65 | 65 | 52.05 |\n| Average | 33.23 | 34.9 | 22.13 | 29.64 |\n| Median | 28.3 | 36.4 | 18.9 | 36.4 |\n| Internship Stipend (INR In Thousands) | Highest | 177 | 240 | 110 | 60 |\n| Average | 69 | 59.5 | 55.1 | 44.6 |\n| Median | 55 | 45 | 50 | 45 |",
             "raw_html": "<table border=\"1\">\n<thead>\n<tr>\n<th rowspan=\"2\">OFFER**</th>\n<th rowspan=\"2\">METRIC</th>\n<th colspan=\"2\">iMTech</th>\n<th colspan=\"2\">MTech</th>\n</tr>\n<tr>\n<th>CSE</th>\n<th>ECE</th>\n<th>CSE</th>\n<th>ECE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td rowspan=\"3\">Full Time CTC<sup>#</sup><br/>(INR In Lakhs)</td>\n<td>Highest</td>\n<td>65</td>\n<td>65</td>\n<td>65</td>\n<td>52.05</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>33.23</td>\n<td>34.9</td>\n<td>22.13</td>\n<td>29.64</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>28.3</td>\n<td>36.4</td>\n<td>18.9</td>\n<td>36.4</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Internship<br/>Stipend<br/>(INR In<br/>Thousands)</td>\n<td>Highest</td>\n<td>177</td>\n<td>240</td>\n<td>110</td>\n<td>60</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>69</td>\n<td>59.5</td>\n<td>55.1</td>\n<td>44.6</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>55</td>\n<td>45</td>\n<td>50</td>\n<td>45</td>\n</tr>\n</tbody>\n</table>",
             "reading_order": 11,
-            "confidence": 0.9925201159996934,
+            "confidence": 0.9925218035100359,
             "bbox": [
                 67.30300000000001,
                 2161.808,
@@ -171,7 +171,7 @@
             "content": "Internship/Thesis Offers*",
             "raw_html": "<h2>Internship/Thesis Offers*</h2>",
             "reading_order": 12,
-            "confidence": 0.9866288899198832,
+            "confidence": 0.9866291007010093,
             "bbox": [
                 1175.8229999999999,
                 4262.72,
@@ -306,7 +306,7 @@
             "content": "##Includes Academia And Industry Offers",
             "raw_html": "<p>##Includes Academia And Industry Offers</p>",
             "reading_order": 21,
-            "confidence": 0.9731560846179826,
+            "confidence": 0.9731560903045006,
             "bbox": [
                 2125.983,
                 10961.279999999999,

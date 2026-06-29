@@ -1,0 +1,290 @@
+{
+    "source": "samples/placement_2025.jpg",
+    "blocks": [
+        {
+            "block_type": "header",
+            "content": "PLACEMENT STATISTICS*",
+            "raw_html": "<h1>PLACEMENT STATISTICS*</h1>",
+            "reading_order": 1,
+            "confidence": 0.9680127374150769,
+            "bbox": [
+                2832.4,
+                345.765,
+                5343.6,
+                806.7850000000001
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "header",
+            "content": "The state of the United States is a community of states and countries with a common language and culture. The United States are a",
+            "raw_html": "<p>The state of the United States is a community of states and countries with a common language and culture. The United States are a",
+            "reading_order": 2,
+            "confidence": 0.7599111679396916,
+            "bbox": [
+                4876.4,
+                1106.448,
+                5694.0,
+                1267.805
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "section_header",
+            "content": "- • 656 Total Offers",
+            "raw_html": "<ul><li>• <b>656</b> Total Offers</li></ul>",
+            "reading_order": 3,
+            "confidence": 0.9463919297198922,
+            "bbox": [
+                262.8,
+                1498.315,
+                2482.0,
+                2189.845
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "figure",
+            "content": "",
+            "raw_html": "",
+            "reading_order": 4,
+            "confidence": 1.0,
+            "bbox": [
+                2715.6000000000004,
+                1498.315,
+                3474.7999999999997,
+                2189.845
+            ],
+            "page_number": 1,
+            "figure_path": "outputs/figures/figure_1.png"
+        },
+        {
+            "block_type": "text",
+            "content": "<img alt=\"A small green circle icon on the left side of the page. To its right, the number '306' is written in black capital letters. Below the",
+            "raw_html": "<img alt=\"A small green circle icon on the left side of the page. To its right, the number '306' is written in black capital letters. Below the",
+            "reading_order": 6,
+            "confidence": 0.8774113037230703,
+            "bbox": [
+                4818.0,
+                1498.315,
+                5694.0,
+                2189.845
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "table",
+            "content": "| OFFER | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC** (INR In Lakhs) | Highest | 145 | 89.12 | 65 | 58 |\n| Average | 36.75 | 38 | 23.2 | 31.99 |\n| Median | 33 | 39.71 | 20.5 | 26 |\n| Internship Stipend (INR In Thousands) | Highest | 250 | 110 | 115 | 75 |\n| Average | 78.66 | 60.81 | 57.37 | 51.33 |\n| Median | 60 | 50 | 50 | 47.5 |",
+            "raw_html": "<table border=\"1\">\n<thead>\n<tr>\n<th rowspan=\"2\">OFFER</th>\n<th rowspan=\"2\">METRIC</th>\n<th colspan=\"2\">iMTech</th>\n<th colspan=\"2\">MTech</th>\n</tr>\n<tr>\n<th>CSE</th>\n<th>ECE</th>\n<th>CSE</th>\n<th>ECE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td rowspan=\"3\">Full Time CTC**<br/>(INR In Lakhs)</td>\n<td>Highest</td>\n<td>145</td>\n<td>89.12</td>\n<td>65</td>\n<td>58</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>36.75</td>\n<td>38</td>\n<td>23.2</td>\n<td>31.99</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>33</td>\n<td>39.71</td>\n<td>20.5</td>\n<td>26</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Internship<br/>Stipend<br/>(INR In<br/>Thousands)</td>\n<td>Highest</td>\n<td>250</td>\n<td>110</td>\n<td>115</td>\n<td>75</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>78.66</td>\n<td>60.81</td>\n<td>57.37</td>\n<td>51.33</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>60</td>\n<td>50</td>\n<td>50</td>\n<td>47.5</td>\n</tr>\n</tbody>\n</table>",
+            "reading_order": 7,
+            "confidence": 0.9915849594900801,
+            "bbox": [
+                204.4,
+                2535.61,
+                5577.2,
+                5186.475
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "text",
+            "content": "We live on a creek",
+            "raw_html": "<p><b>We live on a creek</b></p>",
+            "reading_order": 8,
+            "confidence": 0.5181226860811511,
+            "bbox": [
+                992.8000000000001,
+                5255.628000000001,
+                1956.4,
+                5416.985
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "text",
+            "content": "We can see a continuous downward track of the stress in the surface material as the stress is displaced away from the surface.",
+            "raw_html": "<p>We can see a continuous downward track of the stress in the surface material as the stress is displaced away from the surface.</p>",
+            "reading_order": 9,
+            "confidence": 0.6899650033192015,
+            "bbox": [
+                2043.9999999999998,
+                5255.628000000001,
+                3416.3999999999996,
+                5416.985
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "text",
+            "content": "We have a strong point of view that we can create a strong point of view and that we can create a strong point of view and that we can create a stron",
+            "raw_html": "<p>We have a strong point of view that we can create a strong point of view and that we can create a strong point of view and that we can create a stron",
+            "reading_order": 10,
+            "confidence": 0.8083205126401902,
+            "bbox": [
+                3533.2,
+                5255.628000000001,
+                4876.4,
+                5416.985
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "section_header",
+            "content": "Internship/Thesis Offers*",
+            "raw_html": "<h1>Internship/Thesis Offers*</h1>",
+            "reading_order": 11,
+            "confidence": 0.9758695508919694,
+            "bbox": [
+                1839.6,
+                5532.24,
+                4000.4,
+                5878.005
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "figure",
+            "content": "",
+            "raw_html": "",
+            "reading_order": 12,
+            "confidence": 1.0,
+            "bbox": [
+                321.2,
+                5993.26,
+                5518.799999999999,
+                7722.085
+            ],
+            "page_number": 1,
+            "figure_path": "outputs/figures/figure_2.png"
+        },
+        {
+            "block_type": "figure",
+            "content": "",
+            "raw_html": "",
+            "reading_order": 13,
+            "confidence": 1.0,
+            "bbox": [
+                642.4,
+                7837.34,
+                4964.0,
+                9566.164999999999
+            ],
+            "page_number": 1,
+            "figure_path": "outputs/figures/figure_3.png"
+        },
+        {
+            "block_type": "section_header",
+            "content": "FullTime Offers##",
+            "raw_html": "<h2>FullTime Offers##</h2>",
+            "reading_order": 14,
+            "confidence": 0.9683553045870541,
+            "bbox": [
+                2160.8,
+                9796.675,
+                3679.2,
+                10142.44
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "figure",
+            "content": "",
+            "raw_html": "",
+            "reading_order": 15,
+            "confidence": 1.0,
+            "bbox": [
+                321.2,
+                10142.44,
+                5518.799999999999,
+                11871.265
+            ],
+            "page_number": 1,
+            "figure_path": "outputs/figures/figure_4.png"
+        },
+        {
+            "block_type": "figure",
+            "content": "",
+            "raw_html": "",
+            "reading_order": 16,
+            "confidence": 1.0,
+            "bbox": [
+                1109.6,
+                11986.52,
+                4555.2,
+                14176.365
+            ],
+            "page_number": 1,
+            "figure_path": "outputs/figures/figure_5.png"
+        },
+        {
+            "block_type": "section_header",
+            "content": "Recruiters",
+            "raw_html": "<h2>Recruiters</h2>",
+            "reading_order": 17,
+            "confidence": 0.9773660950028954,
+            "bbox": [
+                2452.7999999999997,
+                14406.875,
+                3387.2,
+                14752.64
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "section_header",
+            "content": "M.sc. in Digital Society",
+            "raw_html": "<p>M.sc. in Digital Society</p>",
+            "reading_order": 19,
+            "confidence": 0.8987968936309246,
+            "bbox": [
+                2102.4,
+                21322.175,
+                3737.6,
+                21667.94
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "table",
+            "content": "| Highest Stipend - INR65K | Highest CTC - 14 LPA |\n| --- | --- |\n| Average Stipend - INR36.8K | Average CTC - 11.84 LPA |",
+            "raw_html": "<table border=\"1\">\n<tr>\n<td><b>Highest Stipend - INR65K</b></td>\n<td><b>Highest CTC - 14 LPA</b></td>\n</tr>\n<tr>\n<td><b>Average Stipend - INR36.8K</b></td>\n<td><b>Average CTC - 11.84 LPA</b></td>\n</tr>\n</table>",
+            "reading_order": 20,
+            "confidence": 0.9553559534476522,
+            "bbox": [
+                1109.6,
+                21667.94,
+                4730.400000000001,
+                22474.725
+            ],
+            "page_number": 1,
+            "figure_path": null
+        },
+        {
+            "block_type": "footnote",
+            "content": "Placement is an original process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.",
+            "raw_html": "<img alt=\"A small icon of a person holding a placement pocket in the top right corner of the image.\"/>\n<p>Placement is an original process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.</p>",
+            "reading_order": 21,
+            "confidence": 0.9010786708463113,
+            "bbox": [
+                0.0,
+                22474.725,
+                5840.0,
+                23051.0
+            ],
+            "page_number": 1,
+            "figure_path": null
+        }
+    ]
+}

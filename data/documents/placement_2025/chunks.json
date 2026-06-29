@@ -1,0 +1,33 @@
+[
+    {
+        "chunk_id": "258067f4-4566-43a2-b075-f6461521f5a3",
+        "source": "samples/placement_2025.jpg",
+        "chunk_type": "main_content",
+        "title": "PLACEMENT STATISTICS*",
+        "embedding_text": "PLACEMENT STATISTICS*\n\n- \u2022 656 Total Offers\n\n<img alt=\"A small green circle icon on the left side of the page. To its right, the number '306' is written in black capital letters. Below the\n\nWe have a strong point of view that we can create a strong point of view and that we can create a strong point of view and that we can create a stron\n\nInternship/Thesis Offers*\n\nFullTime Offers##\n\nRecruiters\n\nM.sc. in Digital Society",
+        "llm_text": "PLACEMENT STATISTICS*\n\n- \u2022 656 Total Offers\n\n<img alt=\"A small green circle icon on the left side of the page. To its right, the number '306' is written in black capital letters. Below the\n\nWe have a strong point of view that we can create a strong point of view and that we can create a strong point of view and that we can create a stron\n\nInternship/Thesis Offers*\n\nFullTime Offers##\n\nRecruiters\n\nM.sc. in Digital Society",
+        "metadata": {}
+    },
+    {
+        "chunk_id": "31e9bbe3-de18-43f7-9311-5096b5c6b0ba",
+        "source": "samples/placement_2025.jpg",
+        "chunk_type": "table",
+        "title": "- \u2022 656 Total Offers",
+        "embedding_text": "- \u2022 656 Total Offers\n\n| OFFER | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC** (INR In Lakhs) | Highest | 145 | 89.12 | 65 | 58 |\n| Average | 36.75 | 38 | 23.2 | 31.99 |\n| Median | 33 | 39.71 | 20.5 | 26 |\n| Internship Stipend (INR In Thousands) | Highest | 250 | 110 | 115 | 75 |\n| Average | 78.66 | 60.81 | 57.37 | 51.33 |\n| Median | 60 | 50 | 50 | 47.5 |",
+        "llm_text": "- \u2022 656 Total Offers\n\n\nFull Time CTC** (INR In Lakhs)\n\nHighest\n- iMTech CSE: 145\n- iMTech ECE: 89.12\n- MTech CSE: 65\n- MTech ECE: 58\n\nAverage\n- iMTech CSE: 36.75\n- iMTech ECE: 38\n- MTech CSE: 23.2\n- MTech ECE: 31.99\n\nMedian\n- iMTech CSE: 33\n- iMTech ECE: 39.71\n- MTech CSE: 20.5\n- MTech ECE: 26\n\nInternship Stipend (INR In Thousands)\n\nHighest\n- iMTech CSE: 250\n- iMTech ECE: 110\n- MTech CSE: 115\n- MTech ECE: 75\n\nAverage\n- iMTech CSE: 78.66\n- iMTech ECE: 60.81\n- MTech CSE: 57.37\n- MTech ECE: 51.33\n\nMedian\n- iMTech CSE: 60\n- iMTech ECE: 50\n- MTech CSE: 50\n- MTech ECE: 47.5",
+        "metadata": {
+            "has_html": true
+        }
+    },
+    {
+        "chunk_id": "dee5ab83-83c0-45ab-ba46-a7efa302ca15",
+        "source": "samples/placement_2025.jpg",
+        "chunk_type": "table",
+        "title": "M.sc. in Digital Society",
+        "embedding_text": "M.sc. in Digital Society\n\n| Highest Stipend - INR65K | Highest CTC - 14 LPA |\n| --- | --- |\n| Average Stipend - INR36.8K | Average CTC - 11.84 LPA |",
+        "llm_text": "M.sc. in Digital Society\n\n| Highest Stipend - INR65K | Highest CTC - 14 LPA |\n| --- | --- |\n| Average Stipend - INR36.8K | Average CTC - 11.84 LPA |",
+        "metadata": {
+            "has_html": true
+        }
+    }
+]
