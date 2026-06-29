@@ -10,6 +10,13 @@ from vectorstores.chroma_store import (
     ChromaStore
 )
 
+from llm.groq_client import (
+    GroqClient
+)
+
+from rag.rag_pipeline import (
+    RAGPipeline
+)
 
 def main():
 

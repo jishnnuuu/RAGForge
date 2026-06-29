@@ -1,6 +1,6 @@
 [
     {
-        "chunk_id": "005031e4-1a55-4205-831d-94c33cdedfc6",
+        "chunk_id": "50bbcef7-a4f1-434b-bd0b-9c8f64e692b6",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "main_content",
         "title": "PLACEMENT STATISTICS* 2023-2024",
@@ -8,7 +8,7 @@
         "metadata": {}
     },
     {
-        "chunk_id": "d1abdceb-b144-473a-8fd9-b4f12ddf3c0e",
+        "chunk_id": "c4286ad7-139a-4ec0-a525-9d0242e84c2c",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "table",
         "title": "Table 1",

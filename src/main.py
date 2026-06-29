@@ -24,6 +24,10 @@ from retrieval.similarity_search import (
     SimilaritySearch
 )
 
+from storage.document_store import (
+    DocumentStore
+)
+
 
 IMAGE_PATH = "samples/placement_2024.jpg"
 
@@ -218,40 +222,18 @@ def main():
     # Save Outputs
     # ==================================================
 
-    print("\nSaving outputs...")
+    print("\nSaving document...")
     print("=" * 80)
 
-    with open(
-        "outputs/result.json",
-        "w"
-    ) as f:
+    store = DocumentStore()
 
-        f.write(
-            document.model_dump_json(
-                indent=4
-            )
-        )
-
-    with open(
-        "outputs/chunks.json",
-        "w"
-    ) as f:
-
-        json.dump(
-            [
-                chunk.model_dump()
-                for chunk in chunks
-            ],
-            f,
-            indent=4
-        )
-
-    print(
-        "Saved outputs/result.json"
+    document_dir = store.save(
+        document,
+        chunks
     )
 
     print(
-        "Saved outputs/chunks.json"
+        f"Saved to: {document_dir}"
     )
 
     print(
