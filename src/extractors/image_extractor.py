@@ -18,6 +18,9 @@ from utils.html_parser import (
     HTMLParser
 )
 
+from builders.image_document_builder import (
+    ImageDocumentBuilder
+)
 
 LABEL_MAP = {
     "PageHeader": "header",
@@ -50,6 +53,8 @@ class ImageExtractor:
         self.figure_cropper = FigureCropper()
         
         self.html_parser = HTMLParser()
+        
+        self.builder = ImageDocumentBuilder()
 
     
 
@@ -81,71 +86,18 @@ class ImageExtractor:
             layouts
         )
 
-        blocks = []
+        return self.builder.build(
 
-        figure_counter = 0
-
-        for page in pages:
-
-            for block in page.blocks:
-
-                block_type = self.normalize_label(
-                    block.label
-                )
-
-                raw_html = block.html or ""
-
-                content = self.html_parser.parse(
-                    raw_html
-                )
-
-                if (
-                    not content
-                    and block_type != "figure"
-                ):
-                    continue
-
-                figure_path = None
-
-                if block_type == "figure":
-
-                    figure_counter += 1
-
-                    figure_path = (
-                        self.figure_cropper.crop(
-                            image=image,
-                            bbox=block.bbox,
-                            figure_name=(
-                                f"figure_{figure_counter}"
-                            )
-                        )
-                    )
-
-                blocks.append(
-                    ContentBlock(
-                        block_type=block_type,
-                        content=content,
-                        raw_html=raw_html,
-                        reading_order=block.reading_order,
-                        confidence=(
-                            block.confidence
-                            if block.confidence
-                            else 0.0
-                        ),
-                        bbox=(
-                            block.bbox
-                            if block.bbox
-                            else []
-                        ),
-                        figure_path=figure_path
-                    )
-                )
-
-        blocks.sort(
-            key=lambda x: x.reading_order
-        )
-
-        return Document(
             source=image_path,
-            blocks=blocks
+
+            page=pages[0],
+
+            figure_cropper=self.figure_cropper,
+
+            html_parser=self.html_parser,
+
+            normalize_label=self.normalize_label,
+
+            image=image
+
         )
