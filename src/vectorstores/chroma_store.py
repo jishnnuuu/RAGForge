@@ -25,16 +25,24 @@ class ChromaStore:
     ):
 
         self.collection.add(
+
             ids=[
                 chunk.chunk_id
                 for chunk in chunks
             ],
 
+            # ----------------------------
+            # Used ONLY for vector search
+            # ----------------------------
             documents=[
-                chunk.content
+                chunk.embedding_text
                 for chunk in chunks
             ],
 
+            # ----------------------------
+            # Rich information returned
+            # during retrieval
+            # ----------------------------
             metadatas=[
                 {
                     "source": chunk.source,
@@ -43,7 +51,13 @@ class ChromaStore:
                         chunk.title
                         if chunk.title
                         else ""
-                    )
+                    ),
+
+                    # Used by the LLM
+                    "llm_text": chunk.llm_text,
+
+                    # Optional metadata
+                    **chunk.metadata
                 }
                 for chunk in chunks
             ],
@@ -58,9 +72,11 @@ class ChromaStore:
     ):
 
         return self.collection.query(
+
             query_embeddings=[
                 query_embedding.tolist()
             ],
+
             n_results=top_k
         )
 
@@ -77,6 +93,7 @@ class ChromaStore:
             )
 
         except Exception:
+
             pass
 
         self.collection = (

@@ -1,18 +1,18 @@
 [
     {
-        "chunk_id": "212f625e-07fe-49e8-be23-24b6bf1189c7",
+        "chunk_id": "5521f9ba-8055-4600-bf45-78d233dda833",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "main_content",
         "title": "PLACEMENT STATISTICS* 2023-2024",
-        "content": "PLACEMENT STATISTICS* 2023-2024\n\nTotal Offers: 602\n\nInternship Offers: 311\n\nFull Time Offers: 291\n\nInternship/Thesis Offers*\n\n*Includes International Offers\n\nFull Time Offers##\n\n**Includes Off-Campus Offers\n\n##RSUs Included In RSUs\n\n##Includes Academia And Industry Offers\n\nTop Recruiters\n\nPlacement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.\n\nWrite to IIIT-B Placement Office: placement.committee@iiitb.org | iiitb_placement@iiitb.ac.in\n\nFollow us @ /IIITBofficial in /school/IIITBofficial @IIITBofficial Naviiina.iiitb.ac.in www.iiitb.ac.in",
+        "content": "PLACEMENT STATISTICS* 2023-2024\n\nTotal Offers: 602\n\n- 311\n\nInternship Offers\n\nFull Time Offers: 291\n\nInternship/Thesis Offers*\n\n*Includes International Offers\n\nFull Time Offers##\n\n**Includes Off-Campus Offers\n\n##RSUs Included In RSUs\n\n##Includes Academia And Industry Offers\n\nTop Recruiters\n\nPlacement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.\n\nWrite to IIIT-B Placement Office: placement.committee@iiitb.org (mailto:placement.committee@iiitb.org) | iiitb_placement@iiitb.ac.in (mailto:iiitb_placement@iiitb.ac.in)\n\nFollow us @ /IIITBofficial (#) in (#) /school/IIITBofficial (#) @IIITBofficial (#) Naviiina.iiitb.ac.in (#) www.iiitb.ac.in (#)",
         "metadata": {}
     },
     {
-        "chunk_id": "955a6765-52c5-4792-b151-ae4a8a6c7584",
+        "chunk_id": "636ebf9d-7172-46b8-8b91-b1c9ce6d287a",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "table",
         "title": "Table 1",
-        "content": "PLACEMENT STATISTICS* 2023-2024\n\nOFFER** METRIC iMTech MTech CSE ECE CSE ECE Full Time CTC # (INR In Lakhs) Highest 65 65 65 52.05 Average 33.23 34.9 22.13 29.64 Median 28.3 36.4 18.9 36.4 Internship Stipend (INR In Thousands) Highest 177 240 110 60 Average 69 59.5 55.1 44.6 Median 55 45 50 45",
+        "content": "PLACEMENT STATISTICS* 2023-2024\n\n| OFFER** | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC # (INR In Lakhs) | Highest | 65 | 65 | 65 | 52.05 |\n| Average | 33.23 | 34.9 | 22.13 | 29.64 |\n| Median | 28.3 | 36.4 | 18.9 | 36.4 |\n| Internship Stipend (INR In Thousands) | Highest | 177 | 240 | 110 | 60 |\n| Average | 69 | 59.5 | 55.1 | 44.6 |\n| Median | 55 | 45 | 50 | 45 |",
         "metadata": {}
     }
 ]

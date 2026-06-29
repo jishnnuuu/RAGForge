@@ -25,6 +25,14 @@ def main():
         f"Loaded {len(chunks)} chunks"
     )
 
+    if not chunks:
+
+        print(
+            "\nNo chunks found."
+        )
+
+        return
+
     print(
         "\nGenerating embeddings..."
     )
@@ -36,7 +44,7 @@ def main():
     embeddings = (
         embedder.embed_batch(
             [
-                chunk.content
+                chunk.embedding_text
                 for chunk in chunks
             ]
         )

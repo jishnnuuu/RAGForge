@@ -28,17 +28,13 @@ Rules:
 
 def build_context(results):
 
-    documents = results["documents"][0]
     metadatas = results["metadatas"][0]
 
     context = []
 
     sources = set()
 
-    for document, metadata in zip(
-        documents,
-        metadatas
-    ):
+    for metadata in metadatas:
 
         sources.add(
             metadata["source"]
@@ -49,11 +45,14 @@ def build_context(results):
 Source:
 {metadata['source']}
 
+Chunk Type:
+{metadata.get("chunk_type", "")}
+
 Title:
-{metadata.get("title","")}
+{metadata.get("title", "")}
 
 Content:
-{document}
+{metadata.get("llm_text", "")}
 """
         )
 
@@ -84,9 +83,17 @@ def main():
         if query.lower() == "exit":
             break
 
+        # ----------------------------------------
+        # Embed query
+        # ----------------------------------------
+
         query_embedding = embedder.embed(
             query
         )
+
+        # ----------------------------------------
+        # Retrieve relevant chunks
+        # ----------------------------------------
 
         results = store.search(
             query_embedding,
@@ -123,7 +130,9 @@ Answer:
 
         for source in sources:
 
-            print(f"- {source}")
+            print(
+                f"- {source}"
+            )
 
 
 if __name__ == "__main__":

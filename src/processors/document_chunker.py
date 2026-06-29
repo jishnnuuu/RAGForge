@@ -36,13 +36,12 @@ class DocumentChunker:
         if not headers:
             return None
 
-        # Prefer placement/statistics/report style headers
         for header in headers:
 
-            upper_header = header.upper()
+            upper = header.upper()
 
             if any(
-                keyword in upper_header
+                keyword in upper
                 for keyword in [
                     "PLACEMENT",
                     "STATISTICS",
@@ -54,7 +53,6 @@ class DocumentChunker:
             ):
                 return header
 
-        # fallback: longest header
         return max(
             headers,
             key=len
@@ -88,55 +86,73 @@ class DocumentChunker:
                 i += 1
                 continue
 
-            # ----------------------------------
-            # Skip headers entirely
-            # They are metadata now
-            # ----------------------------------
+            # ---------------------------------------
+            # Ignore headers
+            # ---------------------------------------
 
             if block.block_type == "header":
 
                 i += 1
                 continue
 
-            # ----------------------------------
-            # Tables become separate chunks
-            # ----------------------------------
+            # ---------------------------------------
+            # Tables
+            # ---------------------------------------
 
             if block.block_type == "table":
 
-                table_content = block.content
+                embedding_text = block.content
 
                 if title:
 
-                    table_content = (
+                    embedding_text = (
                         f"{title}\n\n"
-                        f"{table_content}"
+                        f"{embedding_text}"
                     )
 
+                llm_text = (
+                    block.raw_html
+                    if block.raw_html
+                    else embedding_text
+                )
+
                 chunks.append(
+
                     Chunk(
+
                         chunk_id=str(
                             uuid.uuid4()
                         ),
+
                         source=document.source,
+
                         chunk_type="table",
+
                         title=f"Table {table_counter}",
-                        content=table_content,
-                        metadata={}
+
+                        embedding_text=embedding_text,
+
+                        llm_text=llm_text,
+
+                        metadata={
+                            "has_html": bool(
+                                block.raw_html
+                            )
+                        }
+
                     )
+
                 )
 
                 table_counter += 1
 
                 i += 1
+
                 continue
 
-            # ----------------------------------
-            # Metric normalization
-            # 602 + Total Offers
-            # ->
-            # Total Offers: 602
-            # ----------------------------------
+            # ---------------------------------------
+            # Metrics
+            # ---------------------------------------
 
             if (
                 block.block_type == "text"
@@ -149,8 +165,7 @@ class DocumentChunker:
                 next_block = blocks[i + 1]
 
                 if (
-                    next_block.block_type
-                    == "text"
+                    next_block.block_type == "text"
                     and not self._is_numeric(
                         next_block.content
                     )
@@ -162,17 +177,23 @@ class DocumentChunker:
                     )
 
                     i += 2
+
                     continue
 
-            # ----------------------------------
-            # Normal content
-            # ----------------------------------
+            # ---------------------------------------
+            # Normal Content
+            # ---------------------------------------
 
             if block.block_type in [
+
                 "text",
+
                 "metric",
+
                 "section_header",
+
                 "footer"
+
             ]:
 
                 content_parts.append(
@@ -181,9 +202,9 @@ class DocumentChunker:
 
             i += 1
 
-        # ----------------------------------
+        # ---------------------------------------
         # Main Content Chunk
-        # ----------------------------------
+        # ---------------------------------------
 
         if content_parts:
 
@@ -199,17 +220,29 @@ class DocumentChunker:
                 )
 
             chunks.insert(
+
                 0,
+
                 Chunk(
+
                     chunk_id=str(
                         uuid.uuid4()
                     ),
+
                     source=document.source,
+
                     chunk_type="main_content",
+
                     title=title,
-                    content=main_content,
+
+                    embedding_text=main_content,
+
+                    llm_text=main_content,
+
                     metadata={}
+
                 )
+
             )
 
         return chunks

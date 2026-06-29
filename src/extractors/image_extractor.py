@@ -14,6 +14,10 @@ from schemas.document import (
     ContentBlock
 )
 
+from utils.html_parser import (
+    HTMLParser
+)
+
 
 LABEL_MAP = {
     "PageHeader": "header",
@@ -44,24 +48,10 @@ class ImageExtractor:
         )
 
         self.figure_cropper = FigureCropper()
+        
+        self.html_parser = HTMLParser()
 
-    def html_to_text(
-        self,
-        html: str
-    ) -> str:
-
-        if not html:
-            return ""
-
-        soup = BeautifulSoup(
-            html,
-            "html.parser"
-        )
-
-        return soup.get_text(
-            separator=" ",
-            strip=True
-        )
+    
 
     def normalize_label(
         self,
@@ -105,7 +95,7 @@ class ImageExtractor:
 
                 raw_html = block.html or ""
 
-                content = self.html_to_text(
+                content = self.html_parser.parse(
                     raw_html
                 )
 

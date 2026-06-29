@@ -1,5 +1,3 @@
-import json
-
 from services.surya_service import (
     SuryaService
 )
@@ -123,18 +121,25 @@ def main():
         )
 
         print(
-            f"Type    : "
+            f"Type            : "
             f"{chunk.chunk_type}"
         )
 
         print(
-            f"Title   : "
+            f"Title           : "
             f"{chunk.title}"
         )
 
         print(
-            f"Content :\n"
-            f"{chunk.content[:500]}"
+            f"Embedding Text  :\n"
+            f"{chunk.embedding_text[:400]}"
+        )
+
+        print()
+
+        print(
+            f"LLM Text Preview:\n"
+            f"{chunk.llm_text[:400]}"
         )
 
     # ==================================================
@@ -144,18 +149,14 @@ def main():
     print("\nGenerating embeddings...")
     print("=" * 80)
 
-    embedder = (
-        EmbeddingGenerator()
-    )
-
-    chunk_texts = [
-        chunk.content
-        for chunk in chunks
-    ]
+    embedder = EmbeddingGenerator()
 
     chunk_embeddings = (
         embedder.embed_batch(
-            chunk_texts
+            [
+                chunk.embedding_text
+                for chunk in chunks
+            ]
         )
     )
 
@@ -181,9 +182,7 @@ def main():
         )
     )
 
-    searcher = (
-        SimilaritySearch()
-    )
+    searcher = SimilaritySearch()
 
     results = searcher.search(
         query_embedding,
@@ -196,30 +195,42 @@ def main():
 
     for idx, score in results:
 
+        chunk = chunks[idx]
+
         print(
-            f"\nScore: "
-            f"{score:.4f}"
+            f"\nScore: {score:.4f}"
         )
 
         print(
-            f"Chunk Type: "
-            f"{chunks[idx].chunk_type}"
+            f"Chunk Type: {chunk.chunk_type}"
         )
 
         print(
-            f"Title: "
-            f"{chunks[idx].title}"
+            f"Title: {chunk.title}"
         )
 
         print(
-            f"Content:\n"
-            f"{chunks[idx].content}"
+            "\nEmbedding Text:\n"
         )
 
-        print("-" * 80)
+        print(
+            chunk.embedding_text
+        )
+
+        print(
+            "\nLLM Text Preview:\n"
+        )
+
+        print(
+            chunk.llm_text[:400]
+        )
+
+        print(
+            "-" * 80
+        )
 
     # ==================================================
-    # Save Outputs
+    # Save
     # ==================================================
 
     print("\nSaving document...")

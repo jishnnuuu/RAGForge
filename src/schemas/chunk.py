@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Any
 
 
 class Chunk(BaseModel):
@@ -9,8 +10,12 @@ class Chunk(BaseModel):
 
     chunk_type: str
 
-    title: str | None = None
+    title: str
 
-    content: str
+    # Used for embedding generation
+    embedding_text: str
 
-    metadata: dict = {}
+    # Used as context for the LLM
+    llm_text: str
+
+    metadata: dict[str, Any] = {}
