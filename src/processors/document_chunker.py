@@ -4,8 +4,18 @@ import uuid
 from schemas.chunk import Chunk
 from schemas.document import Document
 
+from processors.document_formatter import (
+    DocumentFormatter
+)
+
 
 class DocumentChunker:
+
+    def __init__(self):
+
+        self.formatter = DocumentFormatter()
+
+    # =====================================================
 
     def _is_numeric(
         self,
@@ -18,6 +28,8 @@ class DocumentChunker:
                 text.strip()
             )
         )
+
+    # =====================================================
 
     def _extract_title(
         self,
@@ -58,6 +70,8 @@ class DocumentChunker:
             key=len
         )
 
+    # =====================================================
+
     def chunk(
         self,
         document: Document
@@ -86,18 +100,18 @@ class DocumentChunker:
                 i += 1
                 continue
 
-            # ---------------------------------------
-            # Ignore headers
-            # ---------------------------------------
+            # -------------------------------------------------
+            # Ignore document headers
+            # -------------------------------------------------
 
             if block.block_type == "header":
 
                 i += 1
                 continue
 
-            # ---------------------------------------
+            # -------------------------------------------------
             # Tables
-            # ---------------------------------------
+            # -------------------------------------------------
 
             if block.block_type == "table":
 
@@ -111,10 +125,14 @@ class DocumentChunker:
                     )
 
                 llm_text = (
-                    block.raw_html
-                    if block.raw_html
-                    else embedding_text
+                    self.formatter.format(
+                        block
+                    )
                 )
+
+                if not llm_text:
+
+                    llm_text = embedding_text
 
                 chunks.append(
 
@@ -150,9 +168,12 @@ class DocumentChunker:
 
                 continue
 
-            # ---------------------------------------
-            # Metrics
-            # ---------------------------------------
+            # -------------------------------------------------
+            # Metric Normalization
+            # 602 + Total Offers
+            # ->
+            # Total Offers: 602
+            # -------------------------------------------------
 
             if (
                 block.block_type == "text"
@@ -177,12 +198,11 @@ class DocumentChunker:
                     )
 
                     i += 2
-
                     continue
 
-            # ---------------------------------------
-            # Normal Content
-            # ---------------------------------------
+            # -------------------------------------------------
+            # Main document content
+            # -------------------------------------------------
 
             if block.block_type in [
 
@@ -202,9 +222,9 @@ class DocumentChunker:
 
             i += 1
 
-        # ---------------------------------------
+        # -------------------------------------------------
         # Main Content Chunk
-        # ---------------------------------------
+        # -------------------------------------------------
 
         if content_parts:
 

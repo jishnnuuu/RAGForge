@@ -6,6 +6,24 @@ class DocumentFormatter:
     def __init__(self):
 
         self.table_parser = TableParser()
+    
+    def format(
+        self,
+        block
+    ) -> str:
+
+        """
+        Convert a document block into
+        an LLM-friendly representation.
+        """
+
+        if block.block_type == "table":
+
+            return self.format_table(
+                block.raw_html
+            )
+
+        return block.content
 
     def format_table(
         self,
