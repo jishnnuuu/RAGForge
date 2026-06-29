@@ -1,5 +1,19 @@
 import argparse
 
+from pathlib import Path
+
+from extractors.image_extractor import (
+    ImageExtractor
+)
+
+from extractors.pdf_extractor import (
+    PDFExtractor
+)
+
+from extractors.extractor_factory import(
+    ExtractorFactory
+)
+
 from services.surya_service import (
     SuryaService
 )
@@ -28,9 +42,11 @@ from vectorstores.chroma_store import (
     ChromaStore
 )
 
+factory = ExtractorFactory()
+
 
 def ingest(
-    image_path: str
+    file_path: str
 ):
 
     # ==================================================
@@ -49,12 +65,13 @@ def ingest(
     print("\nExtracting document...")
     print("=" * 80)
 
-    extractor = ImageExtractor(
-        surya_service
+    extractor = factory.create(
+        file_path
     )
 
+
     document = extractor.extract(
-        image_path
+        file_path
     )
 
     print(
