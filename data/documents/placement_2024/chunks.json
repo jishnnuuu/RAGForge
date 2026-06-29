@@ -1,18 +1,22 @@
 [
     {
-        "chunk_id": "5521f9ba-8055-4600-bf45-78d233dda833",
+        "chunk_id": "b75e6b45-77a4-4329-9274-f3a8f885e83f",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "main_content",
         "title": "PLACEMENT STATISTICS* 2023-2024",
-        "content": "PLACEMENT STATISTICS* 2023-2024\n\nTotal Offers: 602\n\n- 311\n\nInternship Offers\n\nFull Time Offers: 291\n\nInternship/Thesis Offers*\n\n*Includes International Offers\n\nFull Time Offers##\n\n**Includes Off-Campus Offers\n\n##RSUs Included In RSUs\n\n##Includes Academia And Industry Offers\n\nTop Recruiters\n\nPlacement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.\n\nWrite to IIIT-B Placement Office: placement.committee@iiitb.org (mailto:placement.committee@iiitb.org) | iiitb_placement@iiitb.ac.in (mailto:iiitb_placement@iiitb.ac.in)\n\nFollow us @ /IIITBofficial (#) in (#) /school/IIITBofficial (#) @IIITBofficial (#) Naviiina.iiitb.ac.in (#) www.iiitb.ac.in (#)",
+        "embedding_text": "PLACEMENT STATISTICS* 2023-2024\n\nTotal Offers: 602\n\n- 311\n\nInternship Offers\n\nFull Time Offers: 291\n\nInternship/Thesis Offers*\n\n*Includes International Offers\n\nFull Time Offers##\n\n**Includes Off-Campus Offers\n\n##RSUs Included In RSUs\n\n##Includes Academia And Industry Offers\n\nTop Recruiters\n\nPlacement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.\n\nWrite to IIIT-B Placement Office: placement.committee@iiitb.org (mailto:placement.committee@iiitb.org) | iiitb_placement@iiitb.ac.in (mailto:iiitb_placement@iiitb.ac.in)\n\nFollow us @ /IIITBofficial (#) in (#) /school/IIITBofficial (#) @IIITBofficial (#) Naviiina.iiitb.ac.in (#) www.iiitb.ac.in (#)",
+        "llm_text": "PLACEMENT STATISTICS* 2023-2024\n\nTotal Offers: 602\n\n- 311\n\nInternship Offers\n\nFull Time Offers: 291\n\nInternship/Thesis Offers*\n\n*Includes International Offers\n\nFull Time Offers##\n\n**Includes Off-Campus Offers\n\n##RSUs Included In RSUs\n\n##Includes Academia And Industry Offers\n\nTop Recruiters\n\nPlacement is an ongoing process, and IIIT-B remains committed to providing comprehensive support until all the students are placed.\n\nWrite to IIIT-B Placement Office: placement.committee@iiitb.org (mailto:placement.committee@iiitb.org) | iiitb_placement@iiitb.ac.in (mailto:iiitb_placement@iiitb.ac.in)\n\nFollow us @ /IIITBofficial (#) in (#) /school/IIITBofficial (#) @IIITBofficial (#) Naviiina.iiitb.ac.in (#) www.iiitb.ac.in (#)",
         "metadata": {}
     },
     {
-        "chunk_id": "636ebf9d-7172-46b8-8b91-b1c9ce6d287a",
+        "chunk_id": "3a0fff7a-62b9-41e6-a8fb-e1f8abbe1149",
         "source": "samples/placement_2024.jpg",
         "chunk_type": "table",
         "title": "Table 1",
-        "content": "PLACEMENT STATISTICS* 2023-2024\n\n| OFFER** | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC # (INR In Lakhs) | Highest | 65 | 65 | 65 | 52.05 |\n| Average | 33.23 | 34.9 | 22.13 | 29.64 |\n| Median | 28.3 | 36.4 | 18.9 | 36.4 |\n| Internship Stipend (INR In Thousands) | Highest | 177 | 240 | 110 | 60 |\n| Average | 69 | 59.5 | 55.1 | 44.6 |\n| Median | 55 | 45 | 50 | 45 |",
-        "metadata": {}
+        "embedding_text": "PLACEMENT STATISTICS* 2023-2024\n\n| OFFER** | METRIC | iMTech | MTech |\n| --- | --- | --- | --- |\n| CSE | ECE | CSE | ECE |\n| Full Time CTC # (INR In Lakhs) | Highest | 65 | 65 | 65 | 52.05 |\n| Average | 33.23 | 34.9 | 22.13 | 29.64 |\n| Median | 28.3 | 36.4 | 18.9 | 36.4 |\n| Internship Stipend (INR In Thousands) | Highest | 177 | 240 | 110 | 60 |\n| Average | 69 | 59.5 | 55.1 | 44.6 |\n| Median | 55 | 45 | 50 | 45 |",
+        "llm_text": "<table border=\"1\">\n<thead>\n<tr>\n<th rowspan=\"2\">OFFER**</th>\n<th rowspan=\"2\">METRIC</th>\n<th colspan=\"2\">iMTech</th>\n<th colspan=\"2\">MTech</th>\n</tr>\n<tr>\n<th>CSE</th>\n<th>ECE</th>\n<th>CSE</th>\n<th>ECE</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td rowspan=\"3\">Full Time CTC<sup>#</sup><br/>(INR In Lakhs)</td>\n<td>Highest</td>\n<td>65</td>\n<td>65</td>\n<td>65</td>\n<td>52.05</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>33.23</td>\n<td>34.9</td>\n<td>22.13</td>\n<td>29.64</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>28.3</td>\n<td>36.4</td>\n<td>18.9</td>\n<td>36.4</td>\n</tr>\n<tr>\n<td rowspan=\"3\">Internship<br/>Stipend<br/>(INR In<br/>Thousands)</td>\n<td>Highest</td>\n<td>177</td>\n<td>240</td>\n<td>110</td>\n<td>60</td>\n</tr>\n<tr>\n<td>Average</td>\n<td>69</td>\n<td>59.5</td>\n<td>55.1</td>\n<td>44.6</td>\n</tr>\n<tr>\n<td>Median</td>\n<td>55</td>\n<td>45</td>\n<td>50</td>\n<td>45</td>\n</tr>\n</tbody>\n</table>",
+        "metadata": {
+            "has_html": true
+        }
     }
 ]
