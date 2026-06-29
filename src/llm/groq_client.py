@@ -26,18 +26,31 @@ class GroqClient:
 
     def generate(
         self,
-        prompt: str
+        prompt: str,
+        system_prompt: str = None # type: ignore
     ) -> str:
+
+        messages = []
+        
+        if system_prompt:
+            messages.append(
+                {
+                    "role": "system",
+                    "content": system_prompt
+                }
+            )
+        
+        messages.append(
+            {
+                "role": "user",
+                "content": prompt
+            }
+        )
 
         response = (
             self.client.chat.completions.create(
                 model=self.model,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
+                messages=messages,
                 temperature=0.0
             )
         )
